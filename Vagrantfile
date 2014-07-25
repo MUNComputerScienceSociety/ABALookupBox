@@ -17,11 +17,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # config.vm.network "forwarded_port", guest: 80, host: 8080
 
-  # Share an additional folder to the guest VM. The first argument is
-  # the path on the host to the actual folder. The second argument is
-  # the path on the guest to mount the folder. And the optional third
-  # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  # Share additional folders to the guest VM.
+  # ABA Lookup project directory
+  config.vm.synced_folder "./abalookup", "/var/www/abalookup"
 
   # Enable provisioning with Puppet stand alone.
   config.vm.provision "puppet" do |puppet|
