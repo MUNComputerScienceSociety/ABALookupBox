@@ -19,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Share additional folders to the guest VM.
   # ABA Lookup project directory
-  config.vm.synced_folder "./abalookup", "/var/www/abalookup"
+  config.vm.synced_folder "./abalookup", "/var/www/abalookup", :create => "true"
 
   # Enable provisioning with Puppet stand alone.
   config.vm.provision "puppet" do |puppet|

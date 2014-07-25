@@ -8,5 +8,9 @@ class { "locales":
 	locales   => ['en_CA.UTF-8 UTF-8'],
 }
 
-# git install
-include git
+# git install plus checkout the aba project
+vcsrepo { "/vagrant/abaproject":
+	ensure   => present,
+	provider => git,
+	source   => "https://github.com/MUNComputerScienceSociety/ABALookup.git",
+}
