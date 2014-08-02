@@ -1,2 +1,3 @@
 # ignore the aba project checkout location
-abaproject/
+.vagrant
+ABALookup
