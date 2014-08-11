@@ -1,3 +1,6 @@
+# bring in per file setups
+import 'nodes/*.pp'
+
 # make sure we have /var/www
 file { '/var/www/':
 	ensure => 'directory',
