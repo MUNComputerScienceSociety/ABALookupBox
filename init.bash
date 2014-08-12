@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Update all package listings
-apt-get update
-
 # Hide the login message
 touch /home/vagrant/.hushlogin
 
