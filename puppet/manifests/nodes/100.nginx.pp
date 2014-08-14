@@ -29,7 +29,10 @@ nginx::resource::location { "abalookup.dev-php":
 	www_root            => '/vagrant/ABALookup/public',
 	location_cfg_append => {
 		'fastcgi_split_path_info' => '^(.+\.php)(/.+)$',
-		'fastcgi_param'           => 'SCRIPT_FILENAME $document_root$fastcgi_script_name',
+		'fastcgi_param'           => [
+			'SCRIPT_FILENAME $document_root$fastcgi_script_name',
+			'APPLICATION_ENVIRONMENT DEVELOPMENT'
+		],
 		'fastcgi_index'           => 'index.php',
 		'include'                 => 'fastcgi_params',
 		'fastcgi_pass'            => 'unix:/var/run/php5-fpm.sock'
