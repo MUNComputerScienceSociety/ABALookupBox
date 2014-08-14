@@ -1,3 +1,6 @@
 # ignore the aba project checkout location
 .vagrant
 ABALookup
+
+# these files should be included always, even if they being with a dot (which is often ignored)
+!puppet/modules/dotfiles/files/*

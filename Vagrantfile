@@ -30,5 +30,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     puppet.options = "--hiera_config /vagrant/puppet/hiera.yaml"
   end
 
-  config.vm.provision "shell", path: "init.bash"
 end
