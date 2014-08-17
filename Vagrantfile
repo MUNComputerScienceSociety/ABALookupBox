@@ -21,8 +21,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network "forwarded_port", guest: 80, host: 9080
-  config.vm.network "forwarded_port", guest: 443, host: 9443
+  config.vm.network "forwarded_port", guest: 80, host: 9080 # HTTP
+  config.vm.network "forwarded_port", guest: 443, host: 9443 # HTTPS
+  config.vm.network "forwarded_port", guest: 1080, host: 9025 # MailCatcher Server
 
   # Share additional folders to the guest VM.
   # ABA Lookup project directory

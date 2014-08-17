@@ -1,0 +1,36 @@
+{
+  "name": "actionjack-mailcatcher",
+  "version": "0.1.7",
+  "source": "https://github.com/actionjack/puppet-mailcatcher",
+  "author": "actionjack",
+  "license": "Apache License, Version 2.0",
+  "summary": "Install and configure the mailcatcher application.",
+  "description": "This puppet module is used to install and configure the mailcatcher application.\nMailCatcher runs a super simple SMTP server which catches any message sent to it to display in a web interface.",
+  "project_page": "https://github.com/actionjack/puppet-mailcatcher",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 2.2.1"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Gemfile": "a98c7b4788203aaaca41afb4263918bb",
+    "Gemfile.lock": "cfe609e8be42be8203edfbe3bc8bca5a",
+    "Modulefile": "7f7a08438664bce716c47e712fde530a",
+    "README.md": "2f8a452bd4a647b803e6dc0dbafdd729",
+    "Rakefile": "fe574a382a7826dd6d4284b798643502",
+    "manifests/config.pp": "8ab1f0d8423c15f522e9584e6eee266e",
+    "manifests/init.pp": "46feb0c33450b5fc90713798b749b9fa",
+    "manifests/package.pp": "2d2af1099f8c7eab376dd75ad6c2a1d5",
+    "manifests/params.pp": "f2efafc625a5ac0bfed7a69e0c347f73",
+    "manifests/service.pp": "a2b39b1922e32d2400f3ffd997ec7372",
+    "spec/classes/mailcatcher_spec.rb": "62e9c8125d2ae05c1ed995901950284a",
+    "spec/spec_helper.rb": "31443cbb31de764aac79186cbc17689f",
+    "templates/etc/init/mailcatcher.conf.erb": "1606104600323fcb56e41ab4e53da518",
+    "templates/etc/init/mailcatcher.sysv.erb": "7f4dd589a58797b4b972f4713744f066",
+    "tests/init.pp": "b90774fcf85a8944d8b7bbb485e48970"
+  }
+}
